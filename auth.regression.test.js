@@ -3,5 +3,5 @@ test('Regression: Dang nhap sai mat khau', () => {
     expect(login('admin', '999')).toBe(false);
 });
 test('Regression: Username rong sinh ra loi', () => {
-    expect(() => login('', '123')).toThrow('Username rong');
+    expect(() => login('', '999')).toThrow('Username rong');
 });
